@@ -121,3 +121,52 @@ print(type(nums))
 
 mylist = list([1, "Neil", True])
 print(mylist)
+
+# Tuples
+# are like lists except the data inside Tuples will not change and the order will not change
+# use parentheses () instead of brackets []
+#Create tuple with constructor
+mytuple = tuple(('Dave', 42, True))
+
+#create tuple without constructor
+anothertuple = (1,4,2,8,2,2)
+
+print(mytuple)
+
+print(type(mytuple))
+print(type(anothertuple))
+
+# tuples can be copied
+# packing the tuple is assigning values to a tuple
+# to pack a tuple you need to get creative
+
+# create a list using the old tuple
+newlist = list(mytuple)
+
+#append a new value to the tuple
+newlist.append('Neil')
+
+#create a new tuple using the updated list
+newtuple = tuple(newlist)
+
+# new tuple with new value
+print(newtuple)
+
+
+# unpacking a tuple
+# can be unpacked into new variable names
+
+(one, two, *hey) = anothertuple
+print(one)
+print(two)
+print(hey)
+
+(one, *two, hey) = anothertuple
+print(one)
+print(two)
+print(hey)
+
+# we can check what methods are availble on list or tuple
+
+#will count how many occurances of the number 2
+print(anothertuple.count(2))
