@@ -37,7 +37,7 @@ player = int(playerchoice)
 # if 1 > 2:
 #     print('do somthing')
 
-if player > 1 | player > 3:
+if player > 1 or player > 3:
    sys.exit(print("You must enter 1, 2, or 3."))
 
 # computer will use random to make a choice between the 3 values given,
