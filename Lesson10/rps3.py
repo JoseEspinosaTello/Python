@@ -22,7 +22,7 @@ def play_rps():
 
     if playerchoice not in ["1", "2", "3"]:
         print("You must enter 1, 2, or 3.")
-        return (play_rps) #recursion to start function again
+        return play_rps( ) #recursion to start function again
 
     # need to cast the value from string to int for use in if statement
     player = int(playerchoice)
@@ -56,14 +56,14 @@ def play_rps():
     while True:
         playagain = input("\n Y for Yes or \n Q to Quit \n\n")
 
-        if playagain.lower() not in ["y", "q"]:
+        if playagain.lower() not in ["y", "q"]: #if answer is not y or q will ask the question again
             continue
         else:
-            break
+            break # if answer is y or q will break while loop and move to next if statment
 
-    if playagain.lower() == "y":
+    if playagain.lower() == "y": # if answer is y will use recursive function to start game again
          return play_rps() #recursive function
-    else: 
+    else: # if answer anything other than y will end the game
         print("\n🥳🥳🥳🥳") # window key + . for emojis
         print("Thank you for playing\n")
         sys.exit("Bye 👋")
