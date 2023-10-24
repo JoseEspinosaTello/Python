@@ -1,0 +1,33 @@
+pip install requests
+
+if doesnt work use
+
+py -m pip install requests
+
+pip list - show all python installs
+
+install specific version of install
+pip install requests==2.30.0
+
+update pip
+python.exe -m pip install --upgrade pip
+
+pip install -U requests
+
+uninstall
+pip uninstall requests
+
+create a virtual enviroment
+py -m venv .venv
+
+activate virtual enviroment
+source .venv/Scripts/activate - run in git bash
+
+show dependencies
+pip show requests
+
+pip install python-dotenv
+
+pypi.org has the python packages index
+
+pip freeze > requirments.txt - create a file with all the requirments
